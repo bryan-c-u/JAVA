@@ -7,11 +7,15 @@ public class Numeromayormenor {
         Scanner scanner = new Scanner(System.in);
 
         ArrayList<Integer> mayorymenor = new ArrayList<>();
-
-        Integer numero = scanner.nextInt();
+        for(int i = 0 ; i < 5 ; i++){
+            System.out.println("Ingresa 1 numero");
+            Integer numero = scanner.nextInt();
+            mayorymenor.add(numero);
+        }
+        
         int mayor = 0;
         int menor = 0;
-        for(int i = 0 ; i <= mayorymenor.size(); i++){
+        for(int i = 0 ; i < mayorymenor.size(); i++){
             if(mayorymenor.get(i)> mayor){
                 mayor= mayorymenor.get(i);
             }
